@@ -1,0 +1,4 @@
+<p class="log" *ngFor="let log of logs$ | async">
+  <span class="log__date">{{log.createdAt | date:'yyyy.MM.dd HH:mm:ss'}}</span>
+  <span class="log__message">{{log.message}}</span>
+</p>

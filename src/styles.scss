@@ -1,0 +1,28 @@
+@import "styles/reset";
+
+body {
+  position: relative;
+  height: 100%;
+  background: #000;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 100%;
+    background: radial-gradient(circle, #0B1928, #090E14);
+  }
+}
+
+p.timeline-Tweet-text {
+  color: red!important;
+}
+
+youtube-player iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.6;
+}

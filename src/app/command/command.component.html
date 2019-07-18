@@ -1,0 +1,8 @@
+<input
+  type="text"
+  autofocus
+  #elm
+  (keydown.enter)="submit(elm.value); elm.value = ''"
+  (keydown.esc)="elm.value = ''"
+  (blur)="focus(elm)"
+/>

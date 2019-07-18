@@ -1,0 +1,20 @@
+@import "variables";
+
+:host {
+  bottom: 272px;
+  right: 16px;
+  width: 400px;
+  padding: 16px;
+  border: 1px solid rgba($primary-color, .3);
+  box-shadow: 0 0 24px rgba($primary-color, .1);
+  box-sizing: border-box;
+  background: rgba($primary-color, .01);
+  transform: scale(1);
+  &.hide {
+    transform: scale(0);
+  }
+}
+
+canvas {
+  height: 100%;
+}

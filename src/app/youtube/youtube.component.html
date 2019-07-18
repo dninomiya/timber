@@ -1,0 +1,8 @@
+<!-- <iframe [src]="src | safe: 'resourceUrl'" frameborder="0"></iframe> -->
+
+<youtube-player
+[videoId]="id"
+(ready)="savePlayer($event)"
+(change)="onStateChange($event)"
+[playerVars]="playerVars"
+></youtube-player>

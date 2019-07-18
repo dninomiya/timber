@@ -1,0 +1,21 @@
+@import "variables";
+
+.canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.ui {
+  display: block;
+  transition: .6s;
+  position: fixed;
+  &.hide {
+    opacity: 0;
+  }
+  &.zoom {
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%)) scale(3);
+    right: auto;
+    bottom: auto;
+    z-index: 1000;
+  }
+}

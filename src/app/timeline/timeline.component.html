@@ -1,0 +1,8 @@
+<div class="timeline" [scrollTop]="scrollTop" (mouseenter)="disabled()" (mouseleave)="enable()" (scroll)="onScroll($event)">
+  <div #timeline>
+    <ngx-twitter-timeline
+      [data]="{ sourceType: 'url', url: 'https://twitter.com/d151005' }"
+      [opts]="opts"
+    ></ngx-twitter-timeline>
+  </div>
+</div>

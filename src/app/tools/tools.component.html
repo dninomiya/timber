@@ -1,0 +1,18 @@
+<div class="tools">
+  <a class="tools__item" href="https://github.com/deerboy/timber" target="_blank">
+    <i class="fab fa-fw fa-github"></i>
+  </a>
+  <a class="tools__item" href="https://twitter.com/d151005" target="_blank">
+    <i class="fab fa-fw fa-twitter"></i>
+  </a>
+  <div class="tools__item">
+    <div class="mic" [class.disabled]="!isMicActive">
+      <i
+        class="fas fa-fw fa-microphone-slash"
+        *ngIf="!isMicActive"
+        (click)="start()"
+      ></i>
+      <i class="fas fa-fw fa-microphone" *ngIf="isMicActive"></i>
+    </div>
+  </div>
+</div>

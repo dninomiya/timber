@@ -1,0 +1,28 @@
+@import "variables";
+
+:host {
+  display: block;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  transform: scale(1);
+  &.hide {
+    transform: scale(0);
+  }
+}
+
+p {
+  color: $primary-color;
+  text-shadow: 0 0 8px $primary-color;
+  line-height: 1;
+}
+
+.date {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}

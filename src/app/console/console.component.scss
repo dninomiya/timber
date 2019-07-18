@@ -1,0 +1,32 @@
+@import "variables";
+
+:host {
+  width: 400px;
+  padding: 16px;
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid rgba($primary-color, .3);
+  box-shadow: 0 0 24px rgba($primary-color, .1);
+  box-sizing: border-box;
+  background: rgba(black, .3);
+  transform: translate(
+    calc(50vw - 50%),
+    calc(100vh - 100% - 16px)
+  ) scale(1);
+  &.hide {
+    transform: scale(0);
+  }
+}
+
+.log {
+  font-size: 11px;
+  color: rgba($primary-color, .6);
+  display: flex;
+  &__date:after {
+    content: ":";
+    margin-right: 8px;
+  }
+  &__message {
+    flex: 1;
+  }
+}

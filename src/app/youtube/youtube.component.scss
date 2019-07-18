@@ -1,0 +1,19 @@
+@import "variables";
+
+:host {
+  transform: translate(
+    calc(100vw - 100% - 16px),
+    calc(100vh - 100% - 16px)
+  ) scale(1);
+  &.hide {
+    transform: translate(
+      calc(100vw - 100% - 16px),
+      calc(100vh - 100% - 16px)
+    ) scale(0);
+  }
+  opacity: 0.8;
+  width: 400px;
+  height: 240px;
+  background: #000;
+  box-shadow: 0 0 16px rgba($primary-color, .1);
+}

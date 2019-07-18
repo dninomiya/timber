@@ -1,0 +1,11 @@
+<div class="canvas">
+  <app-three-model class="ui"></app-three-model>
+  <app-tools (msg)="actionWithVoice($event)"></app-tools>
+  <app-time class="ui" [class.hide]="!uiStatus.time"> </app-time>
+  <app-youtube class="ui" [class.zoom]="zoom === 'youtube'" [class.hide]="!uiStatus.youtube"></app-youtube>
+  <app-timeline class="ui" [class.hide]="!uiStatus.timeline"></app-timeline>
+  <app-skill-chart class="ui" [class.hide]="!uiStatus.skill"></app-skill-chart>
+  <app-profile class="ui" [class.hide]="!uiStatus.profile"></app-profile>
+  <app-console class="ui" [class.hide]="!uiStatus.console"></app-console>
+  <app-command (command)="actionWithCommand($event)"></app-command>
+</div>
