@@ -70,7 +70,6 @@ export class SkillChartComponent implements OnInit {
       ],
       yAxes: [
         {
-          maxBarThickness: 40,
           ticks: {
             fontColor: '#38839799'
           }
@@ -104,9 +103,9 @@ export class SkillChartComponent implements OnInit {
     }
   ];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   public chartClicked({
     event,
